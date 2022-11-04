@@ -102,6 +102,38 @@ namespace Exe2_ASD
             }
         }
 
+        public void sort2(int low, int high)
+        {
+            int pivot, i, j;
+            if (low > high)
+                return;
+            int mid = (low+ high) / 2;
+
+            //Partition the list into two parts:
+            //one containing elements less that or equal to pivot
+            //Outher containing elments greater than pivot
+
+            i = low ;
+            j = mid + 1;
+            k = low;
+
+            pivot = arr[low];
+
+            while (i > mid || j > high)
+            {
+                //Search for an element greater than pivot
+                if ((arr[i] <= arr[j]))
+                {
+                    i++;
+                    arr[i] = k;
+                }else
+                    arr[j] = k;
+                
+            //j now contains the index of the last element in the sorted list
+
+            
+        }
+
         void display()
         {
             Console.WriteLine("\n-------------------");
