@@ -2,8 +2,16 @@
 
 namespace Exe2_ASD
 {
-    
-           
+    class Pr
+    {
+        //Declare array int ukuran 110
+        private int[] arr = new int[110];
+
+        //Declare variabel int untuk simpan data
+        private int n;
+
+        
+    }
 }
 
 // Max data num = 90 + 20 - 2 x 15 + 10 + 20
