@@ -2,12 +2,40 @@
 
 namespace Exe2_ASD
 {
+    
+
     class Method1
     {
         //Declare variabel int untuk simpan data
         private int n;
         //Declare array int ukuran 110
         int[] arr = new int[110];
+
+        public void input()
+        {
+            while (true)
+            {
+                Console.Write("Masukkan banyaknya elemen pada Array: ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 110)
+                    break;
+                else
+                    Console.WriteLine("\nArray dapat mempunyai maksimal 20 elemen.\n");
+            }
+            Console.WriteLine("");
+            Console.WriteLine("-----------------------");
+            Console.WriteLine(" Masukkan elemen array ");
+            Console.WriteLine("-----------------------");
+
+            // Pengguna memasukkan elemen pada array
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + "> ");
+                string s1 = Console.ReadLine();
+                arr[i] = Int32.Parse(s1);
+            }
+        }
 
         public void sort1()
         {
@@ -26,8 +54,18 @@ namespace Exe2_ASD
         }
     }
 
+    
+
     class Pr
     {
+        
+
+
+
+
+
+
+
         static void Main(string[] args)
         {
 
