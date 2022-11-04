@@ -74,7 +74,34 @@ namespace Exe2_ASD
         //Declare variabel yang dibutuhkan
         private int[] arr = new int[110];
         int pivot, i, j, k;
-        
+        //Declare variabel int untuk simpan data
+        private int n;
+
+        void input()
+        {
+            while (true)
+            {
+                Console.Write("Enter the number of elements in the array : ");
+                string s = Console.ReadLine();
+                n = Int32.Parse(s);
+                if (n <= 110)
+                    break;
+                else
+                    Console.WriteLine("\nArray can have maximum 20 elements");
+            }
+            Console.WriteLine("\n==================");
+            Console.WriteLine("Enter array elements");
+            Console.WriteLine("\n================--");
+
+            //get array elements
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("<" + (i + 1) + ">");
+                string s1 = Console.ReadLine();
+                arr[i] = Int32.Parse(s1);
+            }
+        }
+
     }
 
 
