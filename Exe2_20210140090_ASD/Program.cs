@@ -11,6 +11,11 @@ namespace Exe2_ASD
         private int n;
 
         
+
+        static void Main(string[] args)
+        {
+
+        }
     }
 }
 
