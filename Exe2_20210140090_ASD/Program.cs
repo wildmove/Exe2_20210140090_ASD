@@ -131,8 +131,39 @@ namespace Exe2_ASD
         
         static void Main(string[] args)
         {
-            
+            Pr myList = new Pr();
+            Method1 m1 = new Method1();
+            Method2 m2 = new Method2();
+            int pilihanmenu;
 
+            Console.WriteLine("Menu option");
+            Console.WriteLine("===========");
+            Console.WriteLine("1. Method 1");
+            Console.WriteLine("2. Method 2");
+            Console.WriteLine("3. Exit");
+            Console.Write("Enter your choice (1 / 2) : ");
+            pilihanmenu = Convert.ToInt32(Console.ReadLine());
+            switch (pilihanmenu)
+            {
+                case 1:
+                    Console.WriteLine("");
+                    Console.WriteLine("-------------");
+                    Console.WriteLine("Linear search");
+                    Console.WriteLine("-------------");
+                    m1.input();
+                    m1.sort1();
+                    m1.display();
+                    break;
+                case 2:
+                    Console.WriteLine("");
+                    Console.WriteLine("-------------");
+                    Console.WriteLine("Linear search");
+                    Console.WriteLine("-------------");
+                    m2.input();
+                    m2.sort2();
+                    m2.display();
+                    break;
+            }
         }
     }
 }
