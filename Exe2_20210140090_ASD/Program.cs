@@ -69,7 +69,13 @@ namespace Exe2_ASD
 
     }
 
-    
+    class Method2
+    {
+        //Declare variabel yang dibutuhkan
+        private int[] arr = new int[110];
+        int pivot, i, j, k;
+        
+    }
 
 
 
