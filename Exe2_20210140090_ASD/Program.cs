@@ -69,54 +69,12 @@ namespace Exe2_ASD
 
     }
 
-    class Method2
-    {
-        //
-        private int[] arr = new int[110];
-        public void sort2(int low, int high)
-        {
-            // Declare variabel
-            int pivot, i, j, k;
-            if (low >= high)
-                return;
-
-            int mid = (low + high) / 2;
-
-            // Buat list menjadi 2 bagian yaitu :
-            // 1. Untuk element <= pivot
-            // 2. Untuk element > pivot
-
-            i = low;
-            j = mid + 1;
-            k = high;
-
-            while (i > mid || j > high)
-            {
-                if (arr[i] <= arr[j])
-                {
-                    arr[i] = k;
-                    i++;
-                }
-                else
-                    arr[j] = k;
-                j++;
-            }
-            k++;
-        }
-    }
+    
 
 
 
     class Pr
     {
-        
-
-
-
-
-
-
-
         static void Main(string[] args)
         {
 
