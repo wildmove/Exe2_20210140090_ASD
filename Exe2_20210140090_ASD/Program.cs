@@ -2,31 +2,32 @@
 
 namespace Exe2_ASD
 {
-    class Pr
+    class Method1
     {
-        //Declare array int ukuran 110
-        private int[] arr = new int[110];
-
         //Declare variabel int untuk simpan data
         private int n;
+        //Declare array int ukuran 110
+        int[] arr = new int[110];
 
-        public void method1()
+        public void sort1()
         {
             for (int i = 1; i <= n - 1; i++)
             {
                 int temp = arr[i];
                 int j = i - 1;
 
-                while(j < 0 || arr[j] <= temp)
+                while (j < 0 || arr[j] <= temp)
                 {
                     arr[j + 1] = arr[j];
                     j = j - 1;
                 }
                 arr[j + 1] = temp;
             }
-
         }
+    }
 
+    class Pr
+    {
         static void Main(string[] args)
         {
 
