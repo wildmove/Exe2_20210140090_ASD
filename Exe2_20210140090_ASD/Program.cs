@@ -77,7 +77,7 @@ namespace Exe2_ASD
         //Declare variabel int untuk simpan data
         private int n;
 
-        void input()
+        public void input()
         {
             while (true)
             {
@@ -102,14 +102,36 @@ namespace Exe2_ASD
             }
         }
 
+        void display()
+        {
+            Console.WriteLine("\n-------------------");
+            Console.WriteLine("Sorted array elements");
+            Console.WriteLine("---------------------");
+
+            for (int j = 0; j < n; j++)
+            {
+                Console.WriteLine(arr[j]);
+            }
+            Console.WriteLine("\nNumber of comparisons: " + cmp_count);
+            Console.WriteLine("\nNumber of data movements: " + mov_count);
+        }
+
+
+
     }
+
+    
+
+    
 
 
 
     class Pr
     {
+        
         static void Main(string[] args)
         {
+            
 
         }
     }
