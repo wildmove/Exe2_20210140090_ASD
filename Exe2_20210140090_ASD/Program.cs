@@ -10,7 +10,22 @@ namespace Exe2_ASD
         //Declare variabel int untuk simpan data
         private int n;
 
-        
+        public void method1()
+        {
+            for (int i = 1; i <= n - 1; i++)
+            {
+                int temp = arr[i];
+                int j = i - 1;
+
+                while(j < 0 || arr[j] <= temp)
+                {
+                    arr[j + 1] = arr[j];
+                    j = j - 1;
+                }
+                arr[j + 1] = temp;
+            }
+
+        }
 
         static void Main(string[] args)
         {
